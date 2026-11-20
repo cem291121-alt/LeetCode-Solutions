@@ -14,13 +14,13 @@ class Solution {
                 int top = stack.peekLast();
 
                 if (top < -asteroid) {
-                    stack.removeLast(); 
+                    stack.removeLast(); // Top asteroid is destroyed
                 } else if (top == -asteroid) {
-                    stack.removeLast(); 
+                    stack.removeLast(); // Both are destroyed
                     destroyed = true;
                     break;
                 } else {
-                    destroyed = true; 
+                    destroyed = true; // Current asteroid is destroyed
                     break;
                 }
             }
